@@ -1,0 +1,93 @@
+p{
+color:red
+}
+h1{
+color:blue
+}
+h2{
+color:white
+}
+<!-- .(dot) is used for class-->
+p.xyz{        
+color:green !important;
+}
+<!-- # is used for id-->
+
+#ab{
+
+color:blue;
+}
+
+<!-- priority wise inline is more than external css -->
+
+.row{
+width:100%;
+}
+
+img{
+display:block;
+height:200px;
+width:200px;
+}
+
+body{
+height:100%;
+width:100%;
+}
+
+.center{
+margin:0 auto;
+}
+
+.bottom{
+position:absolute;
+bottom:0;
+left: 600px} <!-- for alignment of the image-->
+.text{
+    color:red;
+    text-align:justify;
+    margin-top:20px;
+}
+.code{
+    border:2px solid blue;
+    border-left:10 px solid #ccc;
+    background:#eee;
+    padding:5px;
+    margin:5px;
+}
+.code:before{
+    display:block;
+    font-size:80%;
+    font-style:italic;
+	text= Example;
+    margin-bottom:2px;
+}
+
+.codess{
+	
+    border:2px solid blue;
+    border-left:10 px solid #fff;
+    background:#bbb;
+    padding:5px;
+    margin:5px;
+	height:220px;
+    width:400px;
+	margin-left:500px;
+	
+}
+.codess:before{
+	
+    display:block;
+    font-size:80%;
+    font-style:italic;
+    margin-bottom:2px;
+	margin-left:4px;
+}
+
+#image{
+    float:right;
+    border:2px solid red;
+    height:150px;
+    width:150px;
+    margin-left:40px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<script>
+function printPage() {
+    window.print();
+}
+</script>
+</head>
+	<link rel="stylesheet" href="adm.css"> <!-- this is external css-->
+	<body style="background-color:cyan">
+	<input type="button" value="Print this page" onclick="printPage()" />
+	<hr>
+	<h1 align = left onmouseover="style.color='orange'" onmouseout="style.color='black'"><hr><svg height="80" width="600">
+	<defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+	</defs>
+	<ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+	<text fill="#ffffff" font-size="30" font-family="Verdana"
+	x="50" y="60">ADM</text>
+	</svg>
+	 ADM Tools </hr></h1>
+	<hr>
+	<marquee behavior="alternate" bgcolor="pink"><img src="adm.jpg" style="border:1px solid black;float:center; width:50px; height:30px";></marquee> 
+	<hr>
+	
+	<div class="text">
+	<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click me to display Date and Time.</button>
+<p id="demo"></p>
+    <div id="image" style="background-color:yellow;color:purple;border:2px solid black;width:170px;"> 
+		<a href="images (2).jpg">
+		<img src="images (2).jpg" style="border:6px solid black;float:center; width:150px; height:120px";></a>UNIVERSE is Beautiful<br>
+		IMG:1.0
+	</div>
+    
+    <div class="code" align= "center">special content</div>
+     <button type="button"
+onclick="document.getElementById('hello').innerHTML = Date()">
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Click me to display Date and Time.</button>
+<p id="hello"></p>
+	</div><br>
+<a href="admRegister.html" onmouseover="style.color='red'" onmouseout="style.color='black'"><strong> REGISTER </strong></a><br><br><br>
+<form action="action_page.php">
+
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+
+  Enter a date after 2000-01-01:   
+  &nbsp&nbsp&nbsp<input type="date" name="bday" min="2000-01-02"><br>
+
+  Quantity (between 1 and 5):
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" name="quantity" min="1" max="5"><br>
+
+  <input type="submit">
+  
+</form>
+<div class="codess" align= "center">
+<p align="center" ><b><u><strong> TOOLS </strong></u></b></p>
+<form align= "center" action="calculator1.php">
+	<input type="submit" name="calculator" value="calculator"><br><br>
+</form >
+<form align= "center" action="calander1.php">
+ <input type="submit" name="calander" value="calander"><br><br>
+ </form>
+ <form align= "center" action="tables1.php">
+	<input type="submit" name="tables" value="Tables"><br><br>
+</form>
+<form align= "center" action="birthday1.php">
+	<input type="submit" name="birthday" value="Day OF DOB"><br><br>
+</form>
+</div>
+<hr>
+<p><strong>COMMENT</strong></p>
+ 
+<form action="action_page.php">
+  <textarea name="message" rows="10" cols="30">Please leave your comment here about the site.</textarea>
+  <br>
+  <input type="submit">
+</form>
+</body>
+</html>
+	
+	
